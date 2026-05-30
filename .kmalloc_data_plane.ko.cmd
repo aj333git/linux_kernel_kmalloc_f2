@@ -1,0 +1,1 @@
+cmd_/home/oem/linux_kernel_kmalloc_f2/kmalloc_data_plane.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/oem/linux_kernel_kmalloc_f2/kmalloc_data_plane.ko /home/oem/linux_kernel_kmalloc_f2/kmalloc_data_plane.o /home/oem/linux_kernel_kmalloc_f2/kmalloc_data_plane.mod.o;  true

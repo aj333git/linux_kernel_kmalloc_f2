@@ -1,0 +1,15 @@
+dotnet fsi control_plane.fsx
+cp alloc_plan.txt /tmp/
+
+make clean
+make
+sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ~/kernel_keys/MOK.key ~/kernel_keys/MOK.crt kmalloc_data_plane.ko
+
+
+sudo insmod kmalloc_data_plane.ko \
+names="buffer,big_buffer" \
+values=1024,4096
+
+dmesg | tail
+
+sudo rmmod kmalloc_data_plane

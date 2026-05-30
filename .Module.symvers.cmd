@@ -1,0 +1,1 @@
+cmd_/home/oem/linux_kernel_kmalloc_f2/Module.symvers := sed 's/\.ko$$/\.o/' /home/oem/linux_kernel_kmalloc_f2/modules.order | scripts/mod/modpost -m -a  -o /home/oem/linux_kernel_kmalloc_f2/Module.symvers -e -i Module.symvers   -T -
