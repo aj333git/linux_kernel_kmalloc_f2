@@ -1,0 +1,22 @@
+# Kernel artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+modules.order
+Module.symvers
+
+# Images
+*.png
+*.jpg
+*.jpeg
+
+# Notes and drafts
+cac
+alloc_plan.txt
+dsl_why
+insta_reddit_api
+linkedin_article
+thoery

@@ -1,2 +1,0 @@
-buffer 1024
-big_buffer 4096
